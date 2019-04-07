@@ -104,5 +104,19 @@ $(document).ready(function() {
       $("#onedice").hide();
       $("#threedice").hide();
     }
-  })
+    $("#die-roll-1").text(p1.roll);
+    p1.onedie();
+    $("#round-total-1").text(p1.tempscore);
+  });
+
+  $("#p2-roll").click(function() {
+    p2.roll = rolling();
+    if (p2.roll == 1) {
+      $("#onedice").show();
+      $("#twodice").hide();
+      $("#threedice").hide();
+      $("#fourdice").hide();
+      $("#fivedice").hide();
+      $("#sixdice").hide();
+      
 })
