@@ -62,7 +62,47 @@ $(document).ready(function() {
   $("#p1-roll").click(function() {
     p1.roll == rolling();
     if (p1.roll == 1) {
-      
+      $("#onedice").show();
+      $("#twodice").hide();
+      $("#threedice").hide();
+      $("#fourdice").hide();
+      $("#fivedice").hide();
+      $("#sixdice").hide();
+    }else if (p1.roll == 2) {
+      $("#twodice").show();
+      $("#threedice").hide();
+      $("#fourdice").hide();
+      $("#fivedice").hide();
+      $("#sixdice").hide();
+      $("#onedice").hide();
+    } else if (p1.roll == 3) {
+      $("#threedice").show();
+      $("#fourdice").hide();
+      $("#fivedice").hide();
+      $("#sixdice").hide();
+      $("#twodice").hide();
+      $("#onedice").hide();
+    }else if (p1.roll == 4) {
+      $("#fourdice").show();
+      $("#fivedice").hide();
+      $("#sixdice").hide();
+      $("#twodice").hide();
+      $("#onedice").hide();
+      $("#threedice").hide();
+    } else if (p1.roll == 5) {
+      $("#fivedice").show();
+      $("#sixdice").hide();
+      $("#twodice").hide();
+      $("#onedice").hide();
+      $("#threedice").hide();
+      $("#fourdice").hide();
+    } else {
+      $("#sixdice").show();
+      $("#fivedice").hide();
+      $("#fourdice").hide();
+      $("#twodice").hide();
+      $("#onedice").hide();
+      $("#threedice").hide();
     }
   })
 })
