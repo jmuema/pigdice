@@ -1,33 +1,33 @@
 //business logic
-var rolling = function () {
+var rolling = function() {
   return Math.floor(Math.random() * 6) + 1;
 }
 
-function player(roll, tempscore, totalscore, playername){
-this.roll = 0;
-this.tempscore = 0;
-this.totalscore = 0;
-this.playername;
+function Player(roll, tempscore, totalscore, playername) {
+  this.roll = 0;
+  this.tempscore = 0;
+  this.totalscore = 0;
+  this.playername;
 }
-player.prototype.onedie = function() {
-  if (this.roll == 1){
+Player.prototype.onedie = function() {
+  if (this.roll == 1) {
     this.tempscore = 0;
-    alert("1 is not in your favour" + this.playername + ", your turn is over!");
+    alert("1 is not in your favour " + this.playername + ", your turn is over!");
   } else {
     this.tempscore += this.roll;
   }
 }
-player.prototype.hold = function() {
-  this.totalscore+= this.tempscore;
+Player.prototype.hold = function() {
+  this.totalscore += this.tempscore;
   this.tempscore = 0;
-  alert(this.playername + ", your held your score, your turn is over."); 
+  alert(this.playername + ", your held your score, your turn is over.");
 }
-player.prototype.proGamer = function() {
-  if(this.totalscore == 100) {
+Player.prototype.proGamer = function() {
+  if (this.totalscore == 100) {
     alert(this.playername + ", you are Master Dicer!!");
   }
 }
-player.prototype.newGame = function () {
+Player.prototype.newGame = function() {
   this.roll = 0;
   this.tempscore = 0;
   this.totalscore = 0;
@@ -37,14 +37,14 @@ player.prototype.newGame = function () {
 
 //user-interface logic
 $(document).ready(function() {
-  $("form#players").submit(function(event){
+  $("form#players").submit(function(event) {
     event.preventDefault();
-    p1 = new player();
-    p2 = new player();
-    var player1 = $("imput#player1name").val();
+    p1 = new Player();
+    p2 = new Player();
+    var player1 = $("input#player1name").val();
     var player2 = $("input#player2name").val();
     $("#players").hide();
-    $("#.gaming").show();
+    $(".gaming").show();
     $("#p1").text(player1);
     $("#p2").text(player2);
     p1.playername = player1;
@@ -54,13 +54,13 @@ $(document).ready(function() {
     p1.newGame();
     p2.newGame();
     $("#players").show();
-    $(".gmaing").hide();
+    $(".gaming").hide();
     $("input#player1name").val("");
     $("input#player2name").val("");
 
   });
   $("#p1-roll").click(function() {
-    p1.roll == rolling();
+    p1.roll = rolling();
     if (p1.roll == 1) {
       $("#onedice").show();
       $("#twodice").hide();
@@ -68,7 +68,7 @@ $(document).ready(function() {
       $("#fourdice").hide();
       $("#fivedice").hide();
       $("#sixdice").hide();
-    }else if (p1.roll == 2) {
+    } else if (p1.roll == 2) {
       $("#twodice").show();
       $("#threedice").hide();
       $("#fourdice").hide();
@@ -82,7 +82,7 @@ $(document).ready(function() {
       $("#sixdice").hide();
       $("#twodice").hide();
       $("#onedice").hide();
-    }else if (p1.roll == 4) {
+    } else if (p1.roll == 4) {
       $("#fourdice").show();
       $("#fivedice").hide();
       $("#sixdice").hide();
@@ -131,7 +131,7 @@ $(document).ready(function() {
       $("#fivedice").hide();
       $("#sixdice").hide();
       $("#twodice").hide();
-      $("#onedice").hide();  
+      $("#onedice").hide();
     } else if (p2.roll == 4) {
       $("#fourdice").show();
       $("#fivedice").hide();
@@ -166,6 +166,7 @@ $(document).ready(function() {
     $("#die-roll-1").empty();
     p1.proGamer();
   });
+
   $("#p2-hold").click(function() {
     p2.hold();
     $("#total-score-2").text(p2.totalscore);
@@ -173,5 +174,5 @@ $(document).ready(function() {
     $("#die-roll-2").empty();
     p2.proGamer();
   });
-  
-})
+
+});
