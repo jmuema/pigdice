@@ -19,4 +19,6 @@ HTML, CSS, JavaScript, Bootstrap, JQuery
 ## Support and contact details
 Email me: jmuema95@gmail.com
 ### License
-MIT License Copyright (c) 2019 Joseph Muema Mwangagi
+MIT License
+
+Copyright (c) 2019 Joseph Muema Mwangangi
