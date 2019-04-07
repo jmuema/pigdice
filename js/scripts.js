@@ -35,3 +35,34 @@ player.prototype.newGame = function () {
 }
 
 
+//user-interface logic
+$(document).ready(function() {
+  $("form#players").submit(function(event){
+    event.preventDefault();
+    p1 = new player();
+    p2 = new player();
+    var player1 = $("imput#player1name").val();
+    var player2 = $("input#player2name").val();
+    $("#players").hide();
+    $("#.gaming").show();
+    $("#p1").text(player1);
+    $("#p2").text(player2);
+    p1.playername = player1;
+    p2.playername = player2;
+  });
+  $("#newgame").click(function() {
+    p1.newGame();
+    p2.newGame();
+    $("#players").show();
+    $(".gmaing").hide();
+    $("input#player1name").val("");
+    $("input#player2name").val("");
+
+  });
+  $("#p1-roll").click(function() {
+    p1.roll == rolling();
+    if (p1.roll == 1) {
+      
+    }
+  })
+})
