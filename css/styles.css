@@ -67,3 +67,40 @@ li{
   background-color: aquamarine;
   color: black; 
 }
+#newgame:hover{
+  background-color: #10532C;
+}
+#newgame:active{
+  transform: translateY(5px);
+}
+.panel-footer{
+  margin-top: 30px;
+  text-align: center;
+  font-family: 'Cookie', cursive;
+  font-size: 24px;
+}
+#title1{
+  color: #405596;
+}
+#title2{
+  color: #C75E5E;
+}
+#p1{
+  font-family: 'Gaegu', cursive;
+    font-size: 34px;
+  margin-left: 20px;
+}
+#p2{
+  font-family: 'Gaegu', cursive;
+    font-size: 34px;
+      margin-left: 20px;
+}
+#ready{
+  background-color: orange;
+}
+#p1-hold{
+  background-color: red;
+}
+#p2-hold{
+  background-color: red;
+}
