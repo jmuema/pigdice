@@ -7,16 +7,12 @@
     <script src="js/scripts.js"></script>
     <title>Pig Dice</title>
   </head>
-  <body>
+  <body background="img/dice1.gif">
+    <div class="dice">
     <div class="jumbotron">
     <h1><strong>Pig Dice!</strong></h1>
     </div>
-    <div class="gif">
-      <img src="img/dice.gif">
-    </div>
-    <div class="ng">
-      <button id="newgame">New Game</button><br>
-    </div>
+    
     <div class="container">
       <form id="players">
         <div class="form-group">
@@ -27,7 +23,11 @@
           <label id="player2name">Player 2 Name:</label>
           <input id="player2name" class="form-control" type="text">
         </div>
-        <button id="ready" class="btn-info btn" type="submit">Get Ready!!</button>
+        <button id="ready" class="btn-info btn" type="submit">Let The Games Begin!!</button>
+        <br>
+        <div class="ng">
+          <button id="newgame">New Game</button><br>
+        </div>
       </form>
 
       <div class="gaming">
@@ -60,6 +60,7 @@
         </div>
       </div>
     </div>
-    <p>Click Here For The Game Instructions <a href="game-instructions.html"></a></p>
+  </div>
+    <p>Click Here For  <a href="game-instructions.html">The Game Instructions</a></p>
   </body>
 </html>
