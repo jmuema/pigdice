@@ -12,3 +12,21 @@ img{
 .container{
   width: 1008px;
 }
+.gif{
+  float: right;
+  text-align: center;
+  padding: 10px;
+  width: 400px;
+  margin-right: 45px; 
+}
+h2{
+  font-family: 'Lobster Two' , cursive;
+}
+li{
+  font-style: italic;
+}
+.ng{
+  float: left;
+  padding: 10px;
+  margin-left: 50px;
+}
