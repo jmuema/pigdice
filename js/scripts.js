@@ -17,3 +17,21 @@ player.prototype.onedie = function() {
     this.tempscore += this.roll;
   }
 }
+player.prototype.hold = function() {
+  this.totalscore+= this.tempscore;
+  this.tempscore = 0;
+  alert(this.playername + ", your held your score, your turn is over."); 
+}
+player.prototype.proGamer = function() {
+  if(this.totalscore == 100) {
+    alert(this.playername + ", you are Master Dicer!!");
+  }
+}
+player.prototype.newGame = function () {
+  this.roll = 0;
+  this.tempscore = 0;
+  this.totalscore = 0;
+  this.playername = ('');
+}
+
+
