@@ -1,0 +1,14 @@
+img{
+  max-width: 300px;
+  max-height: 200px;
+}
+.jumbotron{
+  font-family: 'SKranji' , cursive;
+  text-align: center;
+  height: 250px;
+  font-size: 30px;
+  border: 5px solid black;
+}
+.container{
+  width: 1008px;
+}
