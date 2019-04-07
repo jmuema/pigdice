@@ -30,3 +30,15 @@ li{
   padding: 10px;
   margin-left: 50px;
 }
+#players{
+  width: 700px;
+  text-align: center;
+  padding-left: 322px;
+}
+.gaming{
+  width:950px;
+  display:none;
+}
+.images{
+  margin-left: 300px;
+}
