@@ -3,11 +3,17 @@
 #### By **Joseph Muema Mwangangi**
 ## Link to site
 https://jmuema.github.io/pigdice/
-## BDD
- Specification: JavaScript Quiz
-  * Input player names
-  * Click ready
-  * Game starts
+## BEHAVIOR-DRIVEN DEVELOPMENT
+| INPUT EXAMPLE                  | OUTPUT EXAMPLE                                            |
+|--------------------------------|-----------------------------------------------------------|
+|User inputs his/her name        | when they press begin it shows them their names at the top|
+|--------------------------------|-----------------------------------------------------------|
+|user then rolls the dice        | Shows you the number that you got once you've rolled the dice|
+|--------------------------------|-----------------------------------------------------------|
+                                 |                                                           |
+|--------------------------------|-----------------------------------------------------------|
+                                     |               |                |
+-------------------------------------|---------------|----------------|
 ## Description
 An application for playing a game of pig dice
 ## Setup/Installation Requirements
