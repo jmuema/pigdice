@@ -8,12 +8,12 @@ https://jmuema.github.io/pigdice/
 |--------------------------------|-----------------------------------------------------------|
 |User inputs his/her name        | when they press begin it shows them their names at the top|
 |--------------------------------|-----------------------------------------------------------|
-|user then rolls the dice        | Shows you the number that you got once you've rolled the dice|
+|user then rolls the dice        |Shows you the number that you got once you've rolled the dice|
 |--------------------------------|-----------------------------------------------------------|
-                                 |                                                           |
+|user can hold the dice          | game shows your score.                                    |
 |--------------------------------|-----------------------------------------------------------|
-                                     |               |                |
--------------------------------------|---------------|----------------|
+| user that scores 100           | user wins.                                                |
+|--------------------------------|-----------------------------------------------------------|
 ## Description
 An application for playing a game of pig dice
 ## Setup/Installation Requirements
